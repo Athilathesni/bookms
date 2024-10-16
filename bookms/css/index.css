@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(230, 229, 229);
+}
+.ul{
+    background-color: white;
+    justify-content: start;
+    margin: 0;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.ul li{
+    margin-top: 20px;
+}
+img{
+    margin-left: 100px;
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#search{
+    height: 30px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+button{
+    margin-top: 25px;
+    width: 100px;
+    height: 25px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+}
+ul{
+    list-style-type: none;
+    margin-left:-10px;
+    width: 1600px;
+    margin-top: -10px;
+    overflow: hidden;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+
+}
+li{
+    float: left;
+}
+li a {
+
+    display: block;
+    color: rgb(20, 19, 19);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+span{
+    margin-left: 400px;
+}
+ .main1{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 10px;
+ }
+ .main1 img{
+    width: 1000px;
+    height: 300px;
+    margin: 0px 0px;
+    box-shadow: 2px 2px 8px rgb(202, 202, 201);
+    border: 0;
+    border-radius: 8px;
+ }
+ .main1{
+    animation: bannermove 5s linear infinite;
+ }
+ @keyframes bannermove{
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+ }
+ h2{
+    margin-left: 70px;
+ }
+ .caro{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+ }
+.caro img{
+    height: 350px;
+    width: 200px;
+    
+}
