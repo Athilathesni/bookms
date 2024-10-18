@@ -1,5 +1,5 @@
 /* Importing Google Fonts - Poppins */
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -14,13 +14,11 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 15px;
-  
   background:white;
-  
   overflow: hidden;
-} */
+}
 
-/* .wrapper {
+.wrapper {
   max-width: 500px;
   width: 100%;
   background: #fff;
@@ -29,10 +27,9 @@ body {
 }
 
 .wrapper .title {
-  height: 120px;
-  background: #16a085;
+  height: 200px;
   border-radius: 5px 5px 0 0;
-  color: #fff;
+  color: #141313;
   font-size: 30px;
   font-weight: 600;
   display: flex;
@@ -51,7 +48,7 @@ body {
 }
 
 .wrapper form .row input {
-  height: 100%;
+  height: 50%;
   width: 100%;
   outline: none;
   padding-left: 70px;
@@ -62,7 +59,7 @@ body {
 }
 
 form .row input:focus {
-  border-color: #16a085;
+  border-color: #2a7e6d;
 }
 
 form .row input::placeholder {
@@ -71,12 +68,12 @@ form .row input::placeholder {
 
 .wrapper form .row i {
   position: absolute;
-  width: 55px;
-  height: 100%;
-  color: #fff;
+  width: 40px;
+  height: 50%;
+  color: #050505;
   font-size: 22px;
-  background: #16a085;
-  border: 1px solid #16a085;
+  /* background: #16a085; */
+  border: 1px solid rgb(202, 195, 195);
   border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
@@ -84,11 +81,11 @@ form .row input::placeholder {
 }
 
 .wrapper form .pass {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .wrapper form .pass a {
-  color: #16a085;
+  color: #464747;
   font-size: 17px;
   text-decoration: none;
 }
@@ -99,17 +96,17 @@ form .row input::placeholder {
 
 .wrapper form .button input {
   margin-top: 20px;
-  color: #fff;
+  color: #0a0a0a;
   font-size: 20px;
   font-weight: 500;
   padding-left: 0px;
-  background: #16a085;
-  border: 1px solid #16a085;
+  /* background: #16a085; */
+  border: 1px solid whitesmoke;
   cursor: pointer;
 }
 
 form .button input:hover {
-  background: #12876f;
+  background: #3d6161;
 }
 
 .wrapper form .signup-link {
@@ -119,10 +116,13 @@ form .button input:hover {
 }
 
 .wrapper form .signup-link a {
-  color: #16a085;
+  color: #8e9694;
   text-decoration: none;
+}
+.wrapper form .signup-link a:hover{
+  color: #2a7e6d;
 }
 
 form .signup-link a:hover {
   text-decoration: underline;
-} */
+}
