@@ -111,6 +111,10 @@ span{
     padding: 15px 0;
     
  }
+ a{
+    text-decoration: none;
+    color: black;
+ }
 .caro img{
     height: 350px;
     width: 200px;
@@ -318,3 +322,90 @@ margin-top: 10px;
     display: flex;
     margin-left: 150px;
 }
+
+/* 12thpage */
+.fot{
+    display: flex;
+    margin-left: 200px;
+}
+
+.f1{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f1 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f1 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.f2{
+    margin-left: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f2 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f2 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+.f3{
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color:rgb(248, 68, 100) ;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+}
+.f3 p{
+color: gray;
+margin: 0;
+margin-left: 10px;
+}
+.f3 span{
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+.fot2{
+    display: flex;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* 13th page */
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+
+
