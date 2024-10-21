@@ -1,5 +1,6 @@
 import movieSchema from './model/moviem.js'
-
+// import userSchema from './model/adduser.js'
+import bcrypt from 'bcrypt'
 export async function addMovie(req,res) {
 
     console.log(req.body);
@@ -60,4 +61,24 @@ export async function deleteemp(req, res) {
         });
 }
 
+
+export async function addUser(req,res) {
+    console.log(req.body);
+    const{username,email,pwd,cpwd}=req.body
+    if(!(username&&email&&pwd&&cpwd))
+        return res.status(500).send({msg:"field are empty"})
+    if(pwd!=cpwd)
+        return res.status(500).send({msg:"password not match"})
+
+    bcrypt.hash(pwd,10).then((hpwd)=>{
+console.log(hpwd);
+userSchema.create({username,email,pwd:hpwd})
+
+    }).catch((error)=>{
+        console.log(error);
+        
+    })
+
+    
+}
 
