@@ -78,6 +78,7 @@ a{
 }
 
 
+
 .section-1{
     width: 80vw;
     /* background-color: aqua; */
@@ -116,9 +117,64 @@ a{
     overflow: scroll hidden;
     transform: initial;
 }
+.ads-1{
+    padding: 50px;
+    width: 80vw;
+    margin: auto;
+    /* background-color: antiquewhite; */
+}
+/* .section-2{
+    width: 80vw;
 
-
-
+    margin: auto;
+}
+.sec-2-img{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+}
+.sec-2-img img{
+    border-radius: 10px;
+} */
+/* .section-3-bg{
+    background-color: #2B3149;
+    margin: 40px 0px;
+    padding: 20px;
+    color: white;
+}
+.section-3{
+    width: 80vw;
+    margin: auto;
+}
+.sec-3-block{
+    scroll-behavior: smooth;
+    transition: transform 1000ms;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(10, calc(20% - 25.6px));
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: column;
+    gap: 8px 32px;
+    overflow: scroll hidden;
+    transform: initial;
+    padding: 20px 0px;
+}
+.sec-3-card img{
+    border-radius: 10px;
+} */
+.section-4{
+    width: 80vw;
+    margin: auto;
+}
+.section-4-block{
+    display: flex;
+    gap: 28px;
+}
+.sec-4-card img{
+    border-radius: 10px;
+}
 
  .main1{
     position: relative;
@@ -185,7 +241,7 @@ a{
     font-weight: bold
 } */
 /* 3rd page */
-.add{
+/* .add{
     margin-left: 0;
     margin-top: 70px;
     margin-bottom: 70px;
@@ -196,7 +252,7 @@ a{
 
 }
 /* 4th page */
-.caros{
+ .caros{
     display: flex;
     margin: 0;
     padding: 15px 0;
@@ -213,7 +269,7 @@ h2{
     border-radius: 8px;
     margin: 0;
     margin-left: 40PX;
-}
+} 
 
 /* 5th page */
 .car1 img{
@@ -247,6 +303,7 @@ color: aliceblue;
     width: 200px;
     height: 300px;
     border-radius: 8px;
+    margin-left: 100px;
 }
 .sh2 p{
     margin: 0;
@@ -304,7 +361,7 @@ color: aliceblue;
 }
 
 /* 7th page */
-h5{
+ h5{
     color: rgb(59, 51, 51);
     margin: 0;
     margin-left: 200px;
@@ -312,7 +369,7 @@ h5{
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 22px;  
-}
+} 
 .sev{
     display: flex;
     margin-left: 150px;
@@ -339,7 +396,7 @@ h5{
 }
 .sds div{
 margin-top: 10px;
-}
+} 
 
 /* 8th page */
 .eigh{
@@ -352,10 +409,10 @@ margin-top: 10px;
     border-radius: 8px;
     margin: 0;
     margin-left: 50px;
-}
+} 
 
 /* 9th page */
-.nin{
+ .nin{
     display: flex;
     margin-left: 150px;
 }
@@ -369,7 +426,7 @@ margin-top: 10px;
 .ten{
     display: flex;
     margin-left: 150px;
-}
+} 
 
 /* 11th page */
 .lev{

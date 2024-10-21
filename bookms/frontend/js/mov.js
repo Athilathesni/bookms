@@ -4,7 +4,7 @@ const id=urlParams.get("id");
 console.log(id);
 
 async function getdata() {
-    const res=await fetch(`http://localhost:3001/api/getMovie/${id}`)
+    const res=await fetch(`http://localhost:4000/api/getMovie/${id}`)
     const data=await res.json();
     console.log(data);
     document.getElementById('js-section').innerHTML=`
@@ -61,80 +61,80 @@ async function getdata() {
           <hr>
           <br>
           <h2>Cast</h2>
-          <div class="cast-card-block">
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-1.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-2.avif" alt></div>
-              <div>Amitabh Bachchan</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-3.avif" alt></div>
-              <div>Fahadh Faasil</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-4.avif" alt></div>
-              <div>Rana Daggubatti</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-5.jpg" alt></div>
-              <div>Ritika Singh</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-6.avif" alt></div>
-              <div>Dushara Vijayan</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-7.avif" alt></div>
-              <div>Kishore Kumar</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/cast-card-8.avif" alt></div>
-              <div>Abhirami Gopikumar</div>
-              <div>Actor</div>
-            </div>
+    <div class="cast-card-block">
+          <div class="cast-card">
+            <div ><img src="../image/star1.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
           </div>
-          <br>
-          <hr>
-          <br>
-          <h2>Crew</h2>
-          <div class="cast-card-block">
-            <div class="cast-card">
-              <div><img src="../images/movie-card/crew-card-1.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/crew-card-2.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/crew-card-3.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/crew-card-4.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
-            <div class="cast-card">
-              <div><img src="../images/movie-card/crew-card-5.avif" alt></div>
-              <div>Rajinikanth</div>
-              <div>Actor</div>
-            </div>
+          <div class="cast-card">
+            <div><img src="../image/star2.avif" alt=""></div>
+            <div>Amitabh Bachchan</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../image/star3.avif" alt=""></div>
+            <div>Fahadh Faasil</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../image/star4.avif" alt=""></div>
+            <div>Rana Daggubatti</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../image/star5.jpg" alt=""></div>
+            <div>Ritika Singh</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../image/star6.avif" alt=""></div>
+            <div>Dushara Vijayan</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../images/movie-card/cast-card-7.avif" alt=""></div>
+            <div>Kishore Kumar</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div><img src="../images/movie-card/cast-card-8.avif" alt=""></div>
+            <div>Abhirami Gopikumar</div>
+            <div>Actor</div>
           </div>
         </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Crew</h2>
+        <div class="cast-card-block">
+          <div class="cast-card">
+            <div ><img src="../image/st1.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div ><img src="../image/st2.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div ><img src="../image/st3.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div ><img src="../image/st4.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
+          </div>
+          <div class="cast-card">
+            <div ><img src="../image/st5.avif" alt=""></div>
+            <div>Rajinikanth</div>
+            <div>Actor</div>
+          </div>
+        </div>
+      </div>
     </div>
     <br>
     <div class="modify-btn">
@@ -147,7 +147,7 @@ async function getdata() {
 getdata()
 
 function deletedata(id) {
-    fetch(`http://localhost:3001/api/deleteMovie/${id}`,{
+    fetch(`http://localhost:4000/api/deleteMovie/${id}`,{
         method:"DELETE",
         headers:{"Content-Type":"application/json"}
     })

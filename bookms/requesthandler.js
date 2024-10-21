@@ -15,7 +15,7 @@ export async function addMovie(req,res) {
 }
 
 export async function getMovies(req, res) {
-    console.log("get employee");
+    console.log("get data");
 
     const data = await movieSchema.find();
     console.log(data);

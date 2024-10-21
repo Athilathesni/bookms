@@ -1,12 +1,12 @@
 async function getMovies() {
-    const res = await fetch("http://localhost:3000/api/getMovies");
+    const res = await fetch("http://localhost:4000/api/getMovies");
     const movie=await res.json();
     console.log(movie);
     str=``;
     movie.map((data)=>{
         str+=`
                <div>
-                    <a href="pages/movie.html?id=${data._id}">
+                    <a href="pages/mov.html?id=${data._id}">
                         <div class="card-img">
                             <img src="${data.cardpic}"
                                 width="225"
