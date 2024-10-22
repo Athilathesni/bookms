@@ -165,18 +165,5 @@ function deletedata(id) {
 }
 
 
-function addUser(id){
-  fetch(`http://localhost:4000/api/adduser/${id}`,{
-    method:"post",
-    headers:{"Content-Type":"application/json"},
-  })
-  .then((res)=>{
-console.log(res);
-if(res.status==201){
-  alert("success")
-}
-else{
-  alert("error")
-}
-  })
-}
+
+
