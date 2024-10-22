@@ -10,5 +10,5 @@ router.route('/getMovie/:id').get(rh.getMovie)
 router.route('/update/:id').put(rh.update)
 router.route('/deleteMovie/:id').delete(rh.deleteemp)
 router.route('/adduser').post(rh.addUser)
-router.route('/getuser').get(rh.getUser)
+router.route('/login').post(rh.login)
 export default router;

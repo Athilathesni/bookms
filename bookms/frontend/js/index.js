@@ -30,23 +30,23 @@ getMovies()
 
 
 
-async function getUser() {
-    const res = await fetch("http://localhost:4000/api/getuser");
-    const movie=await res.json();
-    console.log(movie);
-    str=``;
-    movie.map((user)=>{
-        str+=`
-               <form action="/register" method="post" id="form"}">
-            <input type="text" name="username" id="username" placeholder="UserName" value="${user.username}"/>
-            <input type="email" name="email" placeholder="Email" id="email" value="${user.email}"/>
-            <input type="password" name="pass" placeholder="Password" id="pass" value="${user.pass}"/>
-            <input type="cpassword" name="cpass" placeholder="confirm password" id="cpass" value="${user.cpass}">
-            <button>Sign Up</button>
-            </form>
+// async function getUser() {
+//     const res = await fetch("http://localhost:4000/api/getuser");
+//     const movie=await res.json();
+//     console.log(movie);
+//     str=``;
+//     movie.map((user)=>{
+//         str+=`
+//                <form action="/register" method="post" id="form"}">
+//             <input type="text" name="username" id="username" placeholder="UserName" value="${user.username}"/>
+//             <input type="email" name="email" placeholder="Email" id="email" value="${user.email}"/>
+//             <input type="password" name="pass" placeholder="Password" id="pass" value="${user.pass}"/>
+//             <input type="cpassword" name="cpass" placeholder="confirm password" id="cpass" value="${user.cpass}">
+//             <button>Sign Up</button>
+//             </form>
             
-        `
-    });
-    document.getElementById('form').innerHTML=str; 
-}
-getUser()
+//         `
+//     });
+//     document.getElementById('form').innerHTML=str; 
+// }
+// getUser()

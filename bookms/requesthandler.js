@@ -1,6 +1,8 @@
 import movieSchema from './model/moviem.js'
 import userSchema from './model/adduserm.js'
 import bcrypt from 'bcrypt'
+import pkg from 'jsonwebtoken'
+const{sign}=pkg
 export async function addMovie(req,res) {
 
     console.log(req.body);
@@ -66,9 +68,9 @@ export async function addUser(req,res) {
     console.log(req.body);
     const{username,email,pwd,cpwd}=req.body
     if(!(username&&email&&pwd&&cpwd))
-        return res.status(500).send({msg:"field are empty"})
+        return res.status(500).send({msg:"empty"})
     if(pwd!=cpwd)
-        return res.status(500).send({msg:"password not match"})
+        return res.status(500).send({msg:"not match"})
 
     bcrypt.hash(pwd,10).then((hpwd)=>{
 console.log(hpwd);
@@ -86,22 +88,19 @@ userSchema.create({username,email,pwd:hpwd}).then(()=>{
 }
 
 
-export async function getUser(req, res) {
-    console.log("get employee");
+export async function login(req,res) {
+    console.log(req.body);
+    const{email,pass}=req.body
 
-    const data = await userSchema.find();
-    console.log(data);
-    res.status(200).send(data); 
+    if(!(email&&pass))
+        return res.status(500).send({msg:"field are empty"})
+    const user=await userSchema.findOne({email})
+    if(!user)
+        return res.status(500).send({msg:"user not exist"})
+    const success=await bcrypt.compare(pass,user.pass)
+    console.log(success);
+    if(success !== true)
+        return res.status(500).send({msg:"user or password not exist"})
+    const token=await sign({userID:user._id},process.env.JWT_KEY,{expiresIn:"24h"})
+    res.status(200).send(token)
 }
-
-// export async function getUser(req,res) {
-//     console.log(req.params);
-//     const {id}=req.params;
-//     const data=await userSchema.findOne({_id:id})
-//     console.log(data);
-
-//     res.status(200).send(data)
-    
-    
-// }
-
