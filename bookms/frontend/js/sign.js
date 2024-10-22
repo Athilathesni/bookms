@@ -1,17 +1,17 @@
 document.getElementById('form').addEventListener('submit',async function(e) {
     e.preventDefault()
 
-name=document.getElementById('username').value
+username=document.getElementById('username').value
 email=document.getElementById('email').value
 pass=document.getElementById('pass').value
 cpass=document.getElementById('cpass').value
 
 
-console.log(name,email,pass,cpass);
-const res=await fetch('http://localhost4000/api/adduser',{
+console.log(username,email,pass,cpass);
+const res=await fetch('http://localhost:4000/api/adduser',{
     method:"post",
     headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({name,email,pass,cpass})
+    body:JSON.stringify({username,email,pass,cpass})
 })
 console.log(res);
 
@@ -25,3 +25,6 @@ else{
 }
 
 })
+
+
+

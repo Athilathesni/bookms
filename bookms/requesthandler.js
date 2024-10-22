@@ -83,6 +83,25 @@ userSchema.create({username,email,pwd:hpwd}).then(()=>{
         
     })
 
-    
 }
+
+
+export async function getUser(req, res) {
+    console.log("get employee");
+
+    const data = await userSchema.find();
+    console.log(data);
+    res.status(200).send(data); 
+}
+
+// export async function getUser(req,res) {
+//     console.log(req.params);
+//     const {id}=req.params;
+//     const data=await userSchema.findOne({_id:id})
+//     console.log(data);
+
+//     res.status(200).send(data)
+    
+    
+// }
 
